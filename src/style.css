@@ -43,7 +43,8 @@ small {
 }
 #clouds,
 #humidity,
-#feeling {
+#feeling,
+#wind {
   text-align: center;
   font-family: "Fira Mono", monospace;
   line-height: 0.3;

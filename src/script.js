@@ -79,11 +79,18 @@ function feelsLike(response) {
   weatherIcon(response);
 }
 
+function showWind(response) {
+  let wind = response.data.wind.speed;
+  let windSpeed = document.querySelector("#wind");
+  windSpeed.innerHTML = `Wind speed ${Math.round(wind * 3.6)} km/h`;
+  feelsLike(response);
+}
+
 function showHumidity(response) {
   let humid = response.data.main.humidity;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = `Humidity ${humid}%`;
-  feelsLike(response);
+  showWind(response);
 }
 
 function showClouds(response) {
