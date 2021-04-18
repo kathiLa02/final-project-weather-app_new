@@ -163,7 +163,7 @@ function convertCelsius(event) {
   temperature.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 
   let feelingTemperature = document.querySelector("#feeling");
-  feelingTemperature.innerHTML = `${Math.round(feel)}°C`;
+  feelingTemperature.innerHTML = `  ${Math.round(feel)}°C`;
 }
 
 function convertFahrenheit(event) {
