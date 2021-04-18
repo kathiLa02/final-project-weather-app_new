@@ -75,21 +75,21 @@ function weatherIcon(response) {
 function feelsLike(response) {
   feel = Math.round(response.data.main.feels_like);
   let feeling = document.querySelector("#feeling");
-  feeling.innerHTML = `Feels like ${feel}°C`;
+  feeling.innerHTML = `${feel}°C`;
   weatherIcon(response);
 }
 
 function showWind(response) {
   let wind = response.data.wind.speed;
   let windSpeed = document.querySelector("#wind");
-  windSpeed.innerHTML = `Wind speed ${Math.round(wind * 3.6)} km/h`;
+  windSpeed.innerHTML = `${Math.round(wind * 3.6)} km/h`;
   feelsLike(response);
 }
 
 function showHumidity(response) {
   let humid = response.data.main.humidity;
   let humidity = document.querySelector("#humidity");
-  humidity.innerHTML = `Humidity ${humid}%`;
+  humidity.innerHTML = `${humid}%`;
   showWind(response);
 }
 
@@ -163,7 +163,7 @@ function convertCelsius(event) {
   temperature.innerHTML = `${Math.round(celsiusTemperature)}°C`;
 
   let feelingTemperature = document.querySelector("#feeling");
-  feelingTemperature.innerHTML = `Feels like ${Math.round(feel)}°C`;
+  feelingTemperature.innerHTML = `${Math.round(feel)}°C`;
 }
 
 function convertFahrenheit(event) {
@@ -174,9 +174,7 @@ function convertFahrenheit(event) {
 
   let feelingTemperature = document.querySelector("#feeling");
   let fahrenheitFeelTemperature = (feel * 9) / 5 + 32;
-  feelingTemperature.innerHTML = `Feels like ${Math.round(
-    fahrenheitFeelTemperature
-  )}°F`;
+  feelingTemperature.innerHTML = `${Math.round(fahrenheitFeelTemperature)}°F`;
 }
 
 let celsiusTemperature = null;

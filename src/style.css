@@ -1,10 +1,10 @@
 .weather-app {
   border: 2px solid #181718;
   border-radius: 10px;
-  margin: 110px 300px 3px 300px;
+  margin: 70px 300px 2px 300px;
   padding: 35px;
   max-width: 1100px;
-  max-height: 700px;
+  max-height: 600px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 h1,
@@ -17,6 +17,7 @@ p {
 }
 h4 {
   color: #181718;
+  margin-top: -30px;
 }
 form {
   position: relative;
@@ -47,10 +48,23 @@ small {
 #wind {
   text-align: center;
   font-family: "Fira Mono", monospace;
-  line-height: 0.3;
+  line-height: 1;
+  font-weight: 100;
 }
 .profile {
   font-family: monospace;
+}
+.card {
+  text-align: center;
+  border: 2px solid #ad8f6d;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 5px 3px;
+  font-family: "Fira Mono", monospace;
+  background-color: transparent;
+}
+#size-card {
+  font-size: 17px;
 }
 video {
   position: fixed;
