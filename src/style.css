@@ -1,0 +1,62 @@
+.weather-app {
+  border: 2px solid #181718;
+  border-radius: 10px;
+  margin: 20px 100px;
+  padding: 35px;
+  max-width: 1100px;
+  max-height: 700px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+h1,
+h2,
+h4,
+p {
+  text-align: center;
+  font-family: "Fira Mono", monospace;
+  color: #181718;
+}
+h4 {
+  color: #181718;
+}
+form {
+  position: relative;
+  top: 20px;
+  left: 40px;
+  width: 300px;
+}
+button {
+  position: relative;
+  left: 340px;
+  width: auto;
+  top: -17.5px;
+}
+small {
+  max-width: 1100px;
+  margin: 20px 100px;
+  color: #d1c5b4;
+}
+.placeholder {
+  font-family: "Fira Mono", monospace;
+}
+#select-unit {
+  text-align: center;
+}
+#clouds,
+#humidity,
+#feeling {
+  text-align: center;
+  font-family: "Fira Mono", monospace;
+  line-height: 0.3;
+}
+.profile {
+  font-family: monospace;
+}
+video {
+  position: fixed;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
