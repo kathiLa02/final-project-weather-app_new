@@ -1,7 +1,7 @@
 .weather-app {
   border: 2px solid #181718;
   border-radius: 10px;
-  margin: 150px 300px;
+  margin: 110px 300px 3px 300px;
   padding: 35px;
   max-width: 1100px;
   max-height: 700px;
@@ -32,8 +32,8 @@ button {
 }
 small {
   max-width: 1100px;
-  margin: 20px 100px;
-  color: #d1c5b4;
+  margin: 0px 300px;
+  color: #fffeeb;
 }
 .placeholder {
   font-family: "Fira Mono", monospace;
