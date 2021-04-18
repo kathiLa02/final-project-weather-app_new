@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/484f7a645b.js" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <div class="container">
+      <video autoplay muted loop>
+        <source src="src/Cloudy Sunset near Coastline.mp4" type="video/mp4">
+      </video>
+      <div class="weather-app">
+        <div class="content">
+            <form id="city-form">
+                <input
+                    type="text"
+                    class="form-control"
+										placeholder="Enter your city"
+										id="city-input"
+                />
+                </div>
+                <button type="submit" class="btn btn-secondary"><i class="fas fa-search"></i></button>
+                <button type="submit" class="btn btn-secondary"><i class="fas fa-location-arrow" id="my-location"></i></button>
+            </form>
+            <br />
+            <br />
+            <br />
+            <h4>Sunday, January 3, 2021, 14:30</h4>
+            <h1><span id="city">Vienna</span> <i class="fas fa-sun" id="today-icon"></i></h1>
+            <h2 id="temperature">5°C</h2>
+						<div id="select-unit">
+							<a href="#" id="celsius-button" class="active"> °C |</a>
+							<a href="#" id="fahrenheit-button"> °F</a>
+						</div>
+            <p>
+                <div id="clouds">Overcast clouds</div>
+                <br />
+                <div id="humidity">Humidity 80%</div>
+                <br />
+                <div id="feeling">Feels like 1°C</div>
+            </p>
+
+      </div>
+      <small>
+        <a
+          href="https://github.com/kathiLa02/final-project-weather-app"
+          target="_blank"
+          >Open-source code</a
+        >
+        by Katharina Lampl
+      </small>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
