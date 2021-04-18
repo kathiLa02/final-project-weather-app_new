@@ -125,8 +125,6 @@ function displayCity(event) {
 let searchCity = document.querySelector("#city-form");
 searchCity.addEventListener("submit", displayCity);
 
-// current location
-
 function getCurrentTemperature(response) {
   let currentCity = response.data.name;
   let h1 = document.querySelector("h1");
@@ -135,22 +133,6 @@ function getCurrentTemperature(response) {
   let h2 = document.querySelector("h2");
   h2.innerHTML = `${temperature}°C`;
 }
-
-function showPosition(position) {
-  let apiKey = "d2d29820d9662bdf3cbb458212a4c7a8";
-  let latitude = position.coords.latitude;
-  let longitude = position.coords.longitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(getCurrentTemperature);
-}
-
-function displayLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(showPosition);
-}
-
-let currentLocation = document.querySelector("#my-location");
-currentLocation.addEventListener("click", displayLocation);
 
 // change between °C and °F
 
